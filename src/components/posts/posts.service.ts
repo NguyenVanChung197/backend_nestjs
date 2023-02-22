@@ -12,7 +12,7 @@ export class PostsService {
   async create(createPostDto: CreatePostDto): Promise<Post> {
     return await new this.model({
       ...createPostDto,
-      createdAt: new Date(),
+      createdAt: new Date()
     }).save();
   }
 

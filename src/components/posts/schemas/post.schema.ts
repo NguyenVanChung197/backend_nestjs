@@ -5,9 +5,6 @@ export type PostDocument = Post & Document;
 
 @Schema()
 export class Post {
-  // @Transform(({ value }) => value.toString())
-  // _id: ObjectId;
-
   @Prop({ required: true })
   title: string;
 
