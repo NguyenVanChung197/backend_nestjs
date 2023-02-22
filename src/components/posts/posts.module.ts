@@ -11,9 +11,9 @@ import { Post, PostSchema } from './schemas/post.schema';
     MongooseModule.forFeature([
       {
         name: Post.name,
-        schema: PostSchema,
-      },
-    ]),
-  ],
+        schema: PostSchema
+      }
+    ])
+  ]
 })
 export class PostsModule {}
