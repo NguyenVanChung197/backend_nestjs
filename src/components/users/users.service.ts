@@ -20,6 +20,10 @@ export class UsersService {
     }
   }
 
+  async getUser(query: object): Promise<User> {
+    return this.userModel.findOne(query);
+  }
+
   // findAll() {
   //   return `This action returns all users`;
   // }
